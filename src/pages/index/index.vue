@@ -1,5 +1,18 @@
 <template>
   <div>
+    <swiper
+      :indicator-dots="indicatorDots"
+      :autoplay="autoplay"
+      :interval="interval"
+      :duration="duration"
+    >
+      <block v-for="img in imgUrls" :key="img">
+        <swiper-item>
+          <image :src="img" style="width:100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+
     <i-grid i-class="no-border">
       <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
           <i-grid-icon>
@@ -35,14 +48,24 @@ export default {
         {title: '起风了', extra: '林俊杰', thumb: 'https://i.loli.net/2017/08/21/599a521472424.jpg', content: '好听！', footer: '行走的CD'},
         {title: '起风了', extra: '林俊杰', thumb: 'https://i.loli.net/2017/08/21/599a521472424.jpg', content: '好听！', footer: '行走的CD'},
         {title: '起风了', extra: '林俊杰', thumb: 'https://i.loli.net/2017/08/21/599a521472424.jpg', content: '好听！', footer: '行走的CD'}
-      ]
+      ],
+      imgUrls: [
+        '/static/images/musician.png', 
+        '/static/images/musician.png',
+        '/static/images/musician.png'
+      ],
+      indicatorDots: false,
+      // vertical: false,
+      autoplay: false,
+      interval: 2000,
+      duration: 500
     }
   },
 
   methods: {
     goType(type){
-      console.log(type);
-      let url = '../list/main?type=' + type.title;
+      console.log(type)
+      let url = '../list/main?type=' + type.title
       mpvue.navigateTo({ url })
     }
   },
