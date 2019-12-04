@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/list/main",
-    "pages/routes/main",
-    "pages/mine/main"
+    "pages/choice/main",
+    "pages/classification/main",
+    "pages/mine/main",
+    "pages/list/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,8 +24,13 @@
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
-      "text": "攻略",
-      "pagePath": "pages/routes/main",
+      "text": "精选",
+      "pagePath": "pages/choice/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
+      "text": "分类",
+      "pagePath": "pages/classification/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }, {
