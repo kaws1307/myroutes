@@ -3,6 +3,7 @@
     <!-- <div class="user">
     <div></div>
     </div> -->
+    
     <swiper
       :indicator-dots="indicatorDots"
       :autoplay="autoplay"
@@ -11,7 +12,7 @@
     >
       <block v-for="img in imgUrls" :key="img">
         <swiper-item>
-          <image :src="img" style="width:100%" />
+          <image class="imgStyle" :src="img" style="width:100%" />
         </swiper-item>
       </block>
     </swiper>
@@ -53,9 +54,10 @@ export default {
         {title: '起风了', extra: '林俊杰', thumb: 'https://i.loli.net/2017/08/21/599a521472424.jpg', content: '好听！', footer: '行走的CD'}
       ],
       imgUrls: [
-        '/static/images/musician.png', 
-        '/static/images/musician.png',
-        '/static/images/musician.png'
+        '/static/images/庆余年.png', 
+        '/static/images/蕊希.png',
+        '/static/images/许三观.png',
+        '/static/images/人生.png'
       ],
       indicatorDots: false,
       // vertical: false,
@@ -85,5 +87,8 @@ div >>> .no-border {
 }
 div >>> .split {
   margin-bottom: 10pt;
+}
+.imgStyle {
+  border-radius: 5px;
 }
 </style>

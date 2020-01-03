@@ -43,14 +43,14 @@ export default {
 </script>
 
 <style scoped>
-.background {
+/* .background {
   height: 550px;
   background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575810649465&di=13dfe9ea0f6dfcd8f1c47823c4541ee2&imgtype=0&src=http%3A%2F%2Fpic36.nipic.com%2F20131205%2F610812_090741643324_2.jpg') no-repeat;
-}
+} */
 .headBox {
   width: 90%;
   height: 170px;
-  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575809637474&di=8bd56b0cfa6dd948b9096f826c47d3bc&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F17%2F89%2F75%2F55a71567ccd29_1024.jpg') no-repeat;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575810649465&di=13dfe9ea0f6dfcd8f1c47823c4541ee2&imgtype=0&src=http%3A%2F%2Fpic36.nipic.com%2F20131205%2F610812_090741643324_2.jpg') no-repeat;
   border-radius: 15px;
   margin: 5px auto;
 }

@@ -15,6 +15,7 @@ export default {
     }
   },
   onLoad (option) {
+    console.log(option)
     this.list = require('@/data/' + option.type + '.json')
     console.log(this.list)
   },

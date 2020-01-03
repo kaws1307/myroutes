@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/mine/main",
-    "pages/choice/main",
     "pages/index/main",
+    "pages/choice/main",
     "pages/classification/main",
+    "pages/mine/main",
     "pages/list/main"
   ],
   "window": {
