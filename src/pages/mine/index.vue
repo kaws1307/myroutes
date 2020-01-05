@@ -26,9 +26,9 @@ export default {
   data () {
     return {
       list: [
+        {img: '/static/images/播放历史.png', content: '我的收听'},
         {img: '/static/images/喜欢.png', content: '我的收藏'},
-        {img: '/static/images/歌单.png', content: '我创建的歌单'},
-        {img: '/static/images/播放历史.png', content: '播放历史'},
+        {img: '/static/images/意见反馈.png', content: '意见反馈'},
       ]
     }
   },

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/choice/main",
     "pages/index/main",
+    "pages/choice/main",
     "pages/classification/main",
     "pages/mine/main",
     "pages/list/main"
@@ -24,20 +24,15 @@
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
-      "text": "精选",
+      "text": "推荐",
       "pagePath": "pages/choice/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
-    }, {
-      "text": "分类",
-      "pagePath": "pages/classification/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }, {
       "text": "我的",
       "pagePath": "pages/mine/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/tabs/mine.png",
+      "selectedIconPath": "static/tabs/mine-active.png"
     }],
 
     "items": [{

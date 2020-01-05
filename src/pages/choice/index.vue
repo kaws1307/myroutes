@@ -15,7 +15,7 @@
           <div class="part1">
             <image class="cover" :src="item.cover" />
           </div>
-          <div class="part2">
+          <div class="part2" :style="item.color">
             <image class="icon" src="/static/images/听书.png" />
             <image class="icon fr" src="/static/images/喜欢1.png" />
             <image class="icon fr" src="/static/images/转发.png" />
@@ -32,9 +32,9 @@ export default {
   data () {
     return {
       recommendList: [
-        {title:'李荣浩', avator:'/static/images/庆余年.png', label:'00', cover:'/static/images/庆余年.png'},
-        {title:'李荣浩', avator:'/static/images/许三观.png', label:'00', cover:'/static/images/蕊希.png'},
-        {title:'李荣浩', avator:'/static/images/蕊希.png', label:'00', cover:'/static/images/许三观.png'},
+        {title:'李荣浩', avator:'/static/images/庆余年.png', label:'00', cover:'/static/images/庆余年.png', color:'background:gray'},
+        {title:'李荣浩', avator:'/static/images/许三观.png', label:'00', cover:'/static/images/蕊希.png', color:'background:pink'},
+        {title:'李荣浩', avator:'/static/images/蕊希.png', label:'00', cover:'/static/images/许三观.png', color:'background:#5E87A2'},
       ]
     }
   },
@@ -84,12 +84,12 @@ span {
 }
 .cover {
   width: 650rpx;
+  height: 300rpx;
   border-radius: 20rpx 20rpx 0 0;
   margin-top: 20rpx;
 }
 .part2 {
   height: 120rpx;
-  background-color: darkkhaki;
   border-radius: 0 0 20rpx 20rpx;
 }
 .icon {
