@@ -16,9 +16,9 @@
             <image class="cover" :src="item.cover" />
           </div>
           <div class="part2" :style="item.color">
-            <image class="icon" src="/static/images/听书.png" />
-            <image class="icon fr" src="/static/images/喜欢1.png" />
-            <image class="icon fr" src="/static/images/转发.png" />
+            <image class="icon" src="cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/听书.png" />
+            <image class="icon fr" src="cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/喜欢1.png" />
+            <image class="icon fr" src="cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/转发.png" />
           </div>
         </div>
       </li>
@@ -32,9 +32,9 @@ export default {
   data () {
     return {
       recommendList: [
-        {title:'李荣浩', avator:'/static/images/庆余年.png', label:'00', cover:'/static/images/庆余年.png', color:'background:gray'},
-        {title:'李荣浩', avator:'/static/images/许三观.png', label:'00', cover:'/static/images/蕊希.png', color:'background:pink'},
-        {title:'李荣浩', avator:'/static/images/蕊希.png', label:'00', cover:'/static/images/许三观.png', color:'background:#5E87A2'},
+        {title:'李荣浩', avator:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/庆余年.png', label:'00', cover:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/庆余年.png', color:'background:gray'},
+        {title:'李荣浩', avator:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/许三观.PNG', label:'00', cover:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/蕊希.png', color:'background:pink'},
+        {title:'李荣浩', avator:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/蕊希.png', label:'00', cover:'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/许三观.PNG', color:'background:#5E87A2'},
       ]
     }
   },

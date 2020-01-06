@@ -33,12 +33,12 @@ export default {
   data () {
     return {
       zone: [
-        {img: '/static/images/00.jpg'},
-        {img: '/static/images/01.jpg'},
-        {img: '/static/images/03.jpg'},
-        {img: '/static/images/04.jpg'},
-        {img: '/static/images/04.jpg'},
-        {img: '/static/images/05.jpg'}
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/00.jpg'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/01.jpg'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/02.jpg'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/03.jpg'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/04.jpg'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/05.jpg'}
       ],
       recommend:[
         {name: '00年代'},
@@ -55,10 +55,10 @@ export default {
         {name: '热歌'}
       ],
       music: [
-        {img: '/static/images/04.jpg', content: '京味国风·北平那些事儿', author: '蜜糖男孩'},
-        {img: '/static/images/03.jpg', content: '长安一夜·灯火阑珊', author: '醉枫染墨'},
-        {img: '/static/images/05.jpg', content: '风韵贯古今', author: '故淮安'},
-        {img: '/static/images/01.jpg', content: '国风·水墨江南', author: '蜜糖男孩'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/01.jpg', content: '京味国风·北平那些事儿', author: '蜜糖男孩'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/02.jpg', content: '长安一夜·灯火阑珊', author: '醉枫染墨'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/05.jpg', content: '风韵贯古今', author: '故淮安'},
+        {img: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/01.jpg', content: '国风·水墨江南', author: '蜜糖男孩'},
       ]
     }
   },

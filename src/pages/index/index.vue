@@ -1,7 +1,10 @@
 <template>
   <div>
-    <i-input :value="val" type="text" mode="wrapped" placeholder="搜索" />
-
+    <div class="search">
+      <p>倾听FM</p>
+      <input :value="val" type="text" placeholder="搜索" />
+    </div>
+    
     <swiper
       :indicator-dots="indicatorDots"
       :autoplay="autoplay"
@@ -52,27 +55,27 @@ export default {
     return {
       val: '',
       hotImg: [
-        {image: '/static/images/蕊希Erin.jpg', title: '蕊希电台', author: '蕊希'},
-        {image: '/static/images/程一.jpg', title: '程一电台', author: '程一'},
-        {image: '/static/images/张云雷.jpg', title: '张云雷相声小曲', author: '张云雷'},
+        {image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/蕊希Erin.jpg', title: '蕊希电台', author: '蕊希'},
+        {image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/程一.jpg', title: '程一电台', author: '程一'},
+        {image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/张云雷.jpg', title: '张云雷相声小曲', author: '张云雷'},
       ],
       title_name: '热门',
       grids: [
-        {title: '主播', image: '/static/images/musician.png'},
-        {title: '排行', image: '/static/images/排行榜.png'},
-        {title: '分类', image: '/static/images/歌单.png'},
-        {title: '一起听', image: '/static/images/电台.png'}
+        {title: '主播', image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/musician.png'},
+        {title: '排行', image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/排行榜.png'},
+        {title: '分类', image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/歌单.png'},
+        {title: '一起听', image: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/电台.png'}
       ],
       card: [
-        {title: '一禅小和尚', extra: '一禅小和尚', thumb: '/static/images/一禅小和尚.jpg', content: '再善良，这三件事也不能让', footer: '有问题，找一禅！'},
-        {title: '睡前歌一首', extra: '吴大侠', thumb: '/static/images/睡前.jpg', content: '林俊杰：可惜没如果', footer: '这里不是音乐百科，只是和你在临睡前，随便聊聊，分享一下睡前歌，仅此而已。'},
-        {title: '为你读诗', extra: '为你读诗', thumb: '/static/images/为你读诗.jpg', content: '杨乃文「为你读诗」：《命运的简单转折》', footer: '为你读诗，给灵魂片刻自由。'}
+        {title: '一禅小和尚', extra: '一禅小和尚', thumb: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/一禅小和尚.jpg', content: '再善良，这三件事也不能让', footer: '有问题，找一禅！'},
+        {title: '睡前歌一首', extra: '吴大侠', thumb: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/睡前.jpg', content: '林俊杰：可惜没如果', footer: '这里不是音乐百科，只是和你在临睡前，随便聊聊，分享一下睡前歌，仅此而已。'},
+        {title: '为你读诗', extra: '为你读诗', thumb: 'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/为你读诗.jpg', content: '杨乃文「为你读诗」：《命运的简单转折》', footer: '为你读诗，给灵魂片刻自由。'}
       ],
       imgUrls: [
-        '/static/images/庆余年.png', 
-        '/static/images/蕊希.png',
-        '/static/images/许三观.png',
-        '/static/images/人生.png'
+        'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/庆余年.png', 
+        'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/蕊希.png',
+        'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/许三观.PNG',
+        'cloud://kaws1307-30kz7.6b61-kaws1307-30kz7-1301065903/images/人生.png'
       ],
       indicatorDots: false,
       // vertical: false,
@@ -103,6 +106,24 @@ div >>> .no-border {
 div >>> .split {
   margin-bottom: 10pt;
 }
+p {
+  display: inline-block;
+  font-size: 50rpx;
+  font-weight: bold;
+  text-indent: 20rpx;
+  color: #1E1E1E;
+}
+input{
+  float: right;
+  width: 500rpx;
+  height: 50rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid gray;
+  font-size: 26rpx;
+  text-indent: 20px;
+  margin: 10rpx 20rpx 20rpx;
+}
+
 .imgStyle {
   border-radius: 10rpx;
 }
