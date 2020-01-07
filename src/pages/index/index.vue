@@ -30,7 +30,7 @@
     <i-panel title="热门">
       <ul>
         <li class="hot" v-for="item in hotImg" :key="item">
-          <image :src="item.image" />
+          <image :src="item.image" @click="goTo(item)" />
           <span>{{item.title}}</span><br>
           <label>{{item.author}}</label>
         </li>
@@ -45,6 +45,7 @@
         </i-card>
       </view>
     </i-panel>
+
   </div>
 </template>
 
@@ -89,6 +90,13 @@ export default {
     goType(type){
       console.log(type)
       let url = '../list/main?type=' + type.title
+      console.log(url)
+      mpvue.navigateTo({ url })
+    },
+    goTo(list){
+      console.log(list)
+      let url = '../detail/main?type=' + list.title
+      console.log(url)
       mpvue.navigateTo({ url })
     }
   },
@@ -115,13 +123,13 @@ p {
 }
 input{
   float: right;
-  width: 500rpx;
+  width: 460rpx;
   height: 50rpx;
   border-radius: 20rpx;
   border: 1rpx solid gray;
   font-size: 26rpx;
-  text-indent: 20px;
-  margin: 10rpx 20rpx 20rpx;
+  padding-left: 20rpx;
+  margin: 10rpx 30rpx 20rpx;
 }
 
 .imgStyle {

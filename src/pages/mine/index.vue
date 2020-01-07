@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div>
     <div class="headBox">
       <view class="userinfo">
         <view class="userinfo-avatar">
@@ -34,6 +34,7 @@ export default {
   },
 
   methods: {
+    
   },
 
   created () {
