@@ -78,6 +78,7 @@ export default {
     // 播放暂停
     hanlerPaly () {
       this.isPaly = !this.isPaly
+      console.log(this.isPaly)
     }
   },
   
